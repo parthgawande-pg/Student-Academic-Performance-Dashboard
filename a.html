@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Academic Performance Dashboard</title>
+<link rel="stylesheet" href="a.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Academic Performance Dashboard</h1>
+
+    <h3>Name : YOUR NAME</h3>
+    <h3>USN : YOUR USN</h3>
+
+    <p><b>Problem Statement:</b> A university seeks to provide students with a centralized academic portal to monitor educational progress throughout the semester. Design a Student Dashboard displaying attendance records, assignment deadlines, examination schedules, academic performance charts, course completion status, achievements, announcements, personalized calendars, and productivity insights within a responsive interface.</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Attendance</h2>
+        <p>Java : <span>92%</span></p>
+        <p>Python : <span>88%</span></p>
+        <p>Web Technology : <span>95%</span></p>
+        <p>Database : <span>90%</span></p>
+    </div>
+
+    <div class="card">
+        <h2>Assignment Deadlines</h2>
+        <ul>
+            <li>Java Project - 5 July</li>
+            <li>Python Assignment - 8 July</li>
+            <li>DBMS Lab - 10 July</li>
+            <li>Web Technology - 15 July</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Exam Schedule</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td>15 July</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>17 July</td>
+                <td>Python</td>
+            </tr>
+            <tr>
+                <td>20 July</td>
+                <td>DBMS</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Academic Performance</h2>
+
+        <div class="bar">
+            <label>Java</label>
+            <div class="progress">
+                <div class="fill" style="width:85%">85%</div>
+            </div>
+        </div>
+
+        <div class="bar">
+            <label>Python</label>
+            <div class="progress">
+                <div class="fill" style="width:78%">78%</div>
+            </div>
+        </div>
+
+        <div class="bar">
+            <label>DBMS</label>
+            <div class="progress">
+                <div class="fill" style="width:90%">90%</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <h2>Course Completion</h2>
+
+        <p>Java</p>
+        <progress value="90" max="100"></progress>
+
+        <p>Python</p>
+        <progress value="80" max="100"></progress>
+
+        <p>Web Technology</p>
+        <progress value="75" max="100"></progress>
+
+    </div>
+
+    <div class="card">
+        <h2>Achievements</h2>
+        <ul>
+            <li>🏆 Coding Competition Winner</li>
+            <li>⭐ 95% Attendance</li>
+            <li>🎖 Best Project Award</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Announcements</h2>
+        <marquee direction="up" height="120">
+            Semester Exam Starts on 15 July.<br><br>
+            Project Submission Last Date 10 July.<br><br>
+            Industrial Visit on 25 July.
+        </marquee>
+    </div>
+
+    <div class="card">
+        <h2>Calendar</h2>
+        <div id="calendar"></div>
+    </div>
+
+    <div class="card">
+        <h2>Productivity Insights</h2>
+        <p>Total Study Hours : <span id="hours">0</span></p>
+        <button onclick="study()">Study +1 Hour</button>
+    </div>
+
+</div>
+
+<script src="a.js"></script>
+
+</body>
+</html>
